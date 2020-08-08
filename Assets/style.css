@@ -1,0 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("cover-photo-me.jpg");
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    font-family: Geneva;
+}
+
+:root {
+    --main-background-color: white;
+    --main-font-color: #000;
+    --dark-background-color: #3B4954;
+    --dark-background-font-color: white;
+    --accent-color-primary: #E6E6FA;
+    --accent-color-secondary: #E0FFFF;
+    --accent-font-color: #000;
+}
+
+.container {
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    justify-content: space-between;
+    font-family: cursive;
+    background-color: var(--dark-background-color);
+    color: var(--dark-background-font-color);
+}
+
+.nav-left {
+    padding: 0 0 0 15px;
+    font-size: 24px;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.nav-about {
+    padding: 0 5px;
+}
+
+.nav-portfolio {
+    padding: 0 5px;
+}
+
+.nav-contact {
+    padding: 0 5px;
+}
+
+.nav-about:hover,
+.nav-portfolio:hover,
+.nav-contact:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    justify-content: center;
+    background-color: var(--dark-background-color);
+    color: var(--dark-background-font-color);
+}
+
+.foot-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.foot-icon {
+    /* list-style-type: none; */
+}
+
+@media (min-width: 550px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }    
+}
