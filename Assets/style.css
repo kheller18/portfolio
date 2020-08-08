@@ -3,13 +3,13 @@
     margin: 0px;
 }
 
-body {
+/* body {
     background-image: url("cover-photo-me.jpg");
     height: 850px;
     background-position: center;
     background-size: cover;
     font-family: Geneva;
-}
+} */
 
 :root {
     --main-background-color: white;
@@ -21,14 +21,10 @@ body {
     --accent-font-color: #000;
 }
 
-.container {
-    
-}
-
 .navbar {
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     align-items: center;
     width: 100%;
     top: 0;
@@ -38,6 +34,8 @@ body {
     background-color: var(--dark-background-color);
     color: var(--dark-background-font-color);
 }
+
+
 
 .nav-left {
     padding: 0 0 0 15px;
@@ -52,25 +50,54 @@ body {
     justify-content: center;
     padding-right: 10px;
     font-size: 20px;
+    list-style-type: none;
 }
 
-.nav-about {
+.nav-right-icon {
+    display: none;
+    position: absolute;
+    right: 5px;
+}
+
+#nav-index {
     padding: 0 5px;
 }
 
-.nav-portfolio {
+#nav-about {
     padding: 0 5px;
 }
 
-.nav-contact {
+#nav-portfolio {
     padding: 0 5px;
 }
 
-.nav-about:hover,
-.nav-portfolio:hover,
-.nav-contact:hover {
+#nav-contact {
+    padding: 0 5px;
+}
+
+#nav-index:hover,
+#nav-about:hover,
+#nav-portfolio:hover,
+#nav-contact:hover,
+.nav-left:hover,
+.foot-icon:hover {
     cursor: pointer;
-    color: white;
+    color: lightgrey;
+}
+
+.picture-container {
+    width: 100%;
+    height: 600px;
+    background-image: url("cover-photo-me.jpg");
+    background-position: center;
+    background-size: cover;    
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -91,17 +118,45 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 24px;
     list-style-type: none;
 }
 
 .foot-icon {
-    /* list-style-type: none; */
+    margin: 0 5px;
 }
 
-@media (min-width: 550px) {
+@media (max-width: 550px) {
     .container {
         width: 100%;
         height: 100%;
     }    
+
+    .nav-right-icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        font-size: 18px;
+    }
+    
+    .nav-right {
+        display: none;
+        position: absolute;
+        top: 35px;
+        right: 8px;
+        z-index: 1001;
+        background-color: white;
+        color: var(--dark-background-color); 
+        padding: 0px;
+    }
+
+    .right-content {
+        border: solid 1px var(--dark-background-color);
+    }
+
+    /* .nav-right-icon:hover .nav-right .nav-right-icon {
+        display: block;
+        color: red;
+        background-color: red; */
+    }
 }

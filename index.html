@@ -19,7 +19,7 @@
         Brief description about me
     -->
 
-    <!-- navbar 
+    <!-- navbar
         My name
         location
         Interests (about)
@@ -27,38 +27,51 @@
         Contact (email page)
         github, linkedin links
     -->
-    <div class="container">
-        <Header>
-            <div class="navbar">
-                <div class="nav-left">Keenan Heller</div>
-                <div class="nav-right">
-                    <div class="nav-about">About</div>
-                    <div class="nav-portfolio">Portfolio</div>
-                    <div class="nav-contact">Contact</div>
-                </div>
-            </div>
-        </Header>
+    
+    <header>
+        <div class="navbar">
+            <div class="nav-left">Keenan Heller</div>
+            <div class="nav-right-icon"><i class="fas fa-list"></i></div>
+            <ul class="nav-right">
+                <li class="right-content" id="nav-index">Home</li>
+                <li class="right-content" id="nav-about">About</li>
+                <li class="right-content" id="nav-portfolio">Portfolio</li>
+                <li class="right-content" id="nav-contact">Contact</li>
+            </ul>
+        </div>
+    </header>
 
-        <Footer>
-            <div class="footer">
-                <ul class="foot-icons">
-                    <li><i class="fab fa-github"></i></li>
-                    <li><i class="fab fa-linkedin"></i></li>
-                </ul>
-            </div>
-        </Footer>
-    </div>
     <section>
-
+        <div class="picture-container"></div>
     </section>
+
+    <section>
+        <div class="about-me">
+            <div class="me-header"><span>Get to Know Me</span></div>
+            <div class="me-content">
+                <div class="me-picture"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <ul class="foot-icons">
+                <li class="foot-icon" onclick="window.open('https://github.com/kheller18')"><i class="fab fa-github"></i></li>
+                <li class="foot-icon" onclick="window.open('https://www.linkedin.com/in/keenanheller/')"><i class="fab fa-linkedin"></i></li>
+            </ul>
+            <!-- <div class="copyright"><i class="far fa-copyright"></i> Copyright 2020 Keenan Heller</div> -->
+        </div>
+    </footer>
+    <!-- </div> -->
 
     <!-- Portfolio
         3 projects w links
-        Resume 
+        Resume
     -->
 
     <!-- Skills
-        beginner / intermediate / expert 
+        beginner / intermediate / expert
 
     -->
 
@@ -74,12 +87,12 @@
 
     <!-- footer
         About
-        Contact 
+        Contact
         site icons
         copyright
     -->
-    
-    
+
+
     <script src="https://use.fontawesome.com/6f5b3ddfd5.js"></script>
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
