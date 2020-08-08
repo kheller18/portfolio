@@ -3,13 +3,9 @@
     margin: 0px;
 }
 
-/* body {
-    background-image: url("cover-photo-me.jpg");
-    height: 850px;
-    background-position: center;
-    background-size: cover;
+body {
     font-family: Geneva;
-} */
+}
 
 :root {
     --main-background-color: white;
@@ -100,13 +96,47 @@
     align-items: center;
 }
 
+.me-header {
+    font-size: 20px;
+    border-bottom: 1px solid var(--dark-background-color);
+}
+
+.me-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.me-picture{
+}
+
+.cooking-image {
+    width: 385px;
+    height: 385px;
+    padding: 5px;
+    border: 1px solid var(--dark-background-color);
+}
+
+.me-blurb {
+    width: 397px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-header {
+    
+}
+
 .footer {
     display: flex;
     flex-direction: row;
-    position: fixed;
     align-items: center;
     width: 100%;
-    bottom: 0;
     height: 50px;
     justify-content: center;
     background-color: var(--dark-background-color);
