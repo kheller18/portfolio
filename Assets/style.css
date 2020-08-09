@@ -105,9 +105,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .me-picture{
+
 }
 
 .cooking-image {
@@ -129,7 +131,73 @@ body {
 }
 
 .portfolio-header {
-    
+    font-size: 20px;
+    border-bottom: 1px solid var(--dark-background-color);
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects {
+    margin: 10px;
+}
+
+.project1-card {
+    background-image: url(chefify.png);
+    background-size: 385px 385px;
+    width: 385px;
+    height: 385px;
+    padding: 5px;
+    border: 1px solid var(--dark-background-color);
+}
+
+.project2-card {
+    background-image: url(weather-dashboard.png);
+    background-size: 385px 385px;
+    width: 385px;
+    height: 385px;
+    padding: 5px;
+    border: 1px solid var(--dark-background-color);
+
+}
+
+.project3-card {
+    background-image: url(daily-calendar.png);
+    background-size: 385px 385px;
+    width: 385px;
+    height: 385px;
+    padding: 5px;
+    border: 1px solid var(--dark-background-color);
+}
+
+.project-title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -6px;
+    bottom: -341px;
+    width: 397px;
+    height: 50px;
+    background-color: var(--dark-background-color);
+    opacity: 0.9;
+    align-items: center;
+}
+
+.projects-blurb {
+    color: white;
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+}
+
+.project-image {
+    width: 385px;
+    height: 385px;
+    padding: 5px;
+    border: 1px solid var(--dark-background-color);
 }
 
 .footer {
@@ -141,6 +209,7 @@ body {
     justify-content: center;
     background-color: var(--dark-background-color);
     color: var(--dark-background-font-color);
+    margin: 10px 0 0 0;
 }
 
 .foot-icons {
