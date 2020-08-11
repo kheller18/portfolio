@@ -5,6 +5,7 @@
 
 body {
     font-family: Geneva;
+    background-color: #cab6a5;
 }
 
 :root {
@@ -87,12 +88,6 @@ body {
     top: 100px;
 }
 
-.contact-form {
-    width: 400px;
-    background-color: lightgrey;
-    display: flex;
-    border: 1px solid var(--dark-background-color);
-}
 
 .contact-content {
     display: flex;
@@ -107,12 +102,16 @@ body {
     margin-bottom: 10px;
 }
 
-.form-content {
-     /* display: block; */
-    /* display: flex;
-    flex-direction: column; */
+.contact-form {
+    width: 400px;
+    background-color: lightgrey;
+    display: flex;
     justify-content: center;
-    /* align-items: center;  */
+    border: 1px solid var(--dark-background-color);
+    border-radius: 5px;
+}
+
+.form-content {
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0 auto;
@@ -147,20 +146,20 @@ body {
     
 }
 
-
-.contact-methods {
-
-}
-
-.contact-form {
-    /* display: block; */
-}
-
 #contact-button {
     width: 100px;
     height: 40px;
     background-color: green;
     color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    position: relative;
+    left: 35%;
+    border-radius: 5px;
+}
+
+#contact-button:hover {
+    cursor: pointer;
 }
 
 .footer {
@@ -216,11 +215,5 @@ body {
 
     .right-content {
         border: solid 1px var(--dark-background-color);
-    }
-
-    /* .nav-right-icon:hover .nav-right .nav-right-icon {
-        display: block;
-        color: red;
-        background-color: red; */
     }
 }

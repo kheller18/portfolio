@@ -5,7 +5,7 @@
 
 body {
     font-family: Geneva;
-    background-color: lightgray;
+    background-color: #cab6a5;
 }
 
 :root {
@@ -21,7 +21,6 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
 .navbar {
@@ -38,8 +37,6 @@ body {
     color: var(--dark-background-font-color);
 }
 
-
-
 .nav-left {
     padding: 0 0 0 15px;
     font-size: 24px;
@@ -52,7 +49,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-right: 10px;
-    font-size: 20px;
+    font-size: 18px;
     list-style-type: none;
 }
 
@@ -98,6 +95,9 @@ body {
 .me-header {
     font-size: 20px;
     border-bottom: 1px solid var(--dark-background-color);
+    text-align: left;
+    width: 70%;  
+    margin-top: 50px;  
 }
 
 .me-content {
@@ -105,21 +105,28 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.me-picture{
-
+    margin: 20px;
+    border: 2px dashed var(--dark-background-color);
 }
 
 .cooking-image {
-    width: 385px;
-    height: 385px;
-    padding: 5px;
-    border: 1px solid var(--dark-background-color);
+    width: 379px;
+    height: 379px;
+    padding: 10px;
+    border-image: 5 round;
+    border-right: none;
 }
 
 .me-blurb {
-    width: 397px;
+    width: 379px;
+    height: 379px;
+    padding: 10px;
+    border-left: none;
+}
+
+.first-letter {
+    font-size: 35px;
+    line-height: 50px;
 }
 
 .portfolio {
@@ -127,11 +134,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .portfolio-header {
     font-size: 20px;
     border-bottom: 1px solid var(--dark-background-color);
+    text-align: left;
+    width: 70%;
 }
 
 .portfolio-content {
@@ -152,6 +162,7 @@ body {
     height: 385px;
     padding: 5px;
     border: 1px solid var(--dark-background-color);
+    border-radius: 5px;
 }
 
 .project1-card {
@@ -161,6 +172,7 @@ body {
     height: 385px;
     padding: 5px;
     border: 1px solid var(--dark-background-color);
+    border-radius: 5px;
 }
 
 .project2-card {
@@ -170,7 +182,7 @@ body {
     height: 385px;
     padding: 5px;
     border: 1px solid var(--dark-background-color);
-
+    border-radius: 5px;
 }
 
 .project3-card {
@@ -180,6 +192,7 @@ body {
     height: 385px;
     padding: 5px;
     border: 1px solid var(--dark-background-color);
+    border-radius: 5px;
 }
 
 .project-title {
@@ -193,6 +206,7 @@ body {
     background-color: var(--dark-background-color);
     opacity: 0.9;
     align-items: center;
+    border-radius: 5px;
 }
 
 .projects-blurb {
@@ -218,14 +232,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
     height: 50px;
     justify-content: center;
     background-color: var(--dark-background-color);
     color: var(--dark-background-font-color);
-    margin: 10px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 .foot-icons {
@@ -269,9 +281,27 @@ body {
         border: solid 1px var(--dark-background-color);
     }
 
-    /* .nav-right-icon:hover .nav-right .nav-right-icon {
-        display: block;
-        color: red;
-        background-color: red; */
+    .me-header {
+        font-size: 20px;
+        border-bottom: 1px solid var(--dark-background-color);
+        text-align: left;
+        width: 100%;  
+        margin-top: 50px;  
     }
+
+    .portfolio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }    
+
+    .portfolio-header {
+        font-size: 20px;
+        border-bottom: 1px solid var(--dark-background-color);
+        text-align: left;
+        width: 100%;
+    }    
 }
