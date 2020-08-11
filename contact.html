@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Keenan Heller</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Assets/contact.css">
 </head>
 <body>
-    
+
+    <!-- Front page
+        Brief description about me
+    -->
+
+    <!-- navbar
+        My name
+        location
+        Interests (about)
+        Portfolio
+        Contact (email page)
+        github, linkedin links
+    -->
+    <!-- <div class="container"> -->
+    <header>
+        <div class="navbar">
+            <div class="nav-left">Keenan Heller</div>
+            <div class="nav-right-icon"><i class="fas fa-list"></i></div>
+            <ul class="nav-right">
+                <li class="right-content" id="nav-index">Home</li>
+                <li class="right-content" id="nav-about">About</li>
+                <li class="right-content" id="nav-portfolio">Portfolio</li>
+                <li class="right-content" id="nav-contact">Contact</li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="contact">
+            <div class="contact-content">
+                <div class="contact-methods">
+                    <div class="contact-github"></div>
+                    <div class="contact-linkedin"></div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-content">
+                        <div class="form-header"><b>Contact Me</b></div>
+                        <label for="name" class="form-labels">YOUR NAME *</label><br>
+                        <input type="text" class="form-body" id="first-name" placeholder="First Name">
+                        <input type="text" class="form-body" id="last-name" placeholder="Last Name"><br>
+                        <label for="name" class="form-labels">EMAIL ADDRESS *</label><br>
+                        <input type="text" class="form-body" id="email-address" placeholder="Eg. example@email.com"><br>
+                        <label for="name" class="form-labels">PHONE NUMBER *</label><br>
+                        <input type="text" class="form-body" id="phone-number" placeholder="Eg. 000-000-0000"><br>
+                        <label for="name" class="form-labels">MESSAGE *</label><br>
+                        <textarea name="message" id="message" placeholder="Enter your message here"></textarea><br>
+                        
+                        <button type="submit" id="contact-button"><b>SUBMIT</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <ul class="foot-icons">
+                <li class="foot-icon" onclick="window.open('https://github.com/kheller18')"><i class="fab fa-github"></i></li>
+                <li class="foot-icon" onclick="window.open('https://www.linkedin.com/in/keenanheller/')"><i class="fab fa-linkedin"></i></li>
+            </ul>
+            <!-- <div class="copyright"><i class="far fa-copyright"></i> Copyright 2020 Keenan Heller</div> -->
+        </div>
+    </footer>
+    <!-- </div>   -->
+    <!-- Portfolio
+        3 projects w links
+        Resume
+    -->
+
+    <!-- Skills
+        beginner / intermediate / expert
+
+    -->
+
+    <!-- Contact Page
+        links to profiles
+        map api location?
+        contact directly
+            name
+            email
+            attach ?
+            message
+    -->
+
+    <!-- footer
+        About
+        Contact
+        site icons
+        copyright
+    -->
+
+
+    <script src="https://use.fontawesome.com/6f5b3ddfd5.js"></script>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='./Assets/script.js'></script>
 </body>
 </html>

@@ -10,13 +10,12 @@ $(document).ready(function() {
         $(".nav-right").css("display", "block");
     })
 
-    // $(".nav-right").on("click", function(event) {
-    //     console.log(event);
-    //     let link = event.target.id;
-    //     link = link.slice(4);
-    //     console.log(link);
-    //     window.location = `${ link }.html`;
-    //     // event.preventDefault();
-    //     // console.log(window.location);
-    // });
+    $("#nav-contact").on("click", function() {
+        window.location = `contact.html`;
+    });
+
+    $("#nav-index").on("click", function() {
+        window.location = `index.html`;
+    });
+
 });

@@ -5,7 +5,6 @@
 
 body {
     font-family: Geneva;
-    background-color: lightgray;
 }
 
 :root {
@@ -79,147 +78,97 @@ body {
     color: lightgrey;
 }
 
-.picture-container {
-    width: 100%;
-    height: 600px;
-    background-image: url("cover-photo-me.jpg");
-    background-position: center;
-    background-size: cover;   
-    z-index: 1001; 
-}
-
-.about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.me-header {
-    font-size: 20px;
-    border-bottom: 1px solid var(--dark-background-color);
-}
-
-.me-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.me-picture{
-
-}
-
-.cooking-image {
-    width: 385px;
-    height: 385px;
-    padding: 5px;
-    border: 1px solid var(--dark-background-color);
-}
-
-.me-blurb {
-    width: 397px;
-}
-
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolio-header {
-    font-size: 20px;
-    border-bottom: 1px solid var(--dark-background-color);
-}
-
-.portfolio-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.projects {
-    margin: 20px;
-}
-
-.project0-card {
-    background-image: url(resume.png);
-    background-size: 385px 385px;
-    width: 385px;
-    height: 385px;
-    padding: 5px;
-    border: 1px solid var(--dark-background-color);
-}
-
-.project1-card {
-    background-image: url(chefify.png);
-    background-size: 385px 385px;
-    width: 385px;
-    height: 385px;
-    padding: 5px;
-    border: 1px solid var(--dark-background-color);
-}
-
-.project2-card {
-    background-image: url(weather-dashboard.png);
-    background-size: 385px 385px;
-    width: 385px;
-    height: 385px;
-    padding: 5px;
-    border: 1px solid var(--dark-background-color);
-
-}
-
-.project3-card {
-    background-image: url(daily-calendar.png);
-    background-size: 385px 385px;
-    width: 385px;
-    height: 385px;
-    padding: 5px;
-    border: 1px solid var(--dark-background-color);
-}
-
-.project-title {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: -6px;
-    bottom: -341px;
-    width: 397px;
-    height: 50px;
-    background-color: var(--dark-background-color);
-    opacity: 0.9;
-    align-items: center;
-}
-
-.projects-blurb {
-    color: white;
-    margin-left: 10px;
-}
-
-.project-image {
-    width: 385px;
-    height: 385px;
-    padding: 5px;
-    border: 1px solid var(--dark-background-color);
-}
-
 .contact {
     display: flex;
     align-items: center;
+    justify-content: center; 
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+.contact-form {
+    width: 400px;
+    background-color: lightgrey;
+    display: flex;
+    border: 1px solid var(--dark-background-color);
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    position: re;
+    align-items: center;
+}
+
+.form-header {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-content {
+     /* display: block; */
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    /* align-items: center;  */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.form-body {
+    height: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.form-labels {
+    font-size: 10px;
+}
+
+#email-address {
+    width: 100%;
+}
+
+#phone-number {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    text-align: left;
+    justify-content: start;
+    
+}
+
+
+.contact-methods {
+
+}
+
+.contact-form {
+    /* display: block; */
+}
+
+#contact-button {
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
 }
 
 .footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* position: absolute;
-    bottom: 0; */
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 50px;
     justify-content: center;
