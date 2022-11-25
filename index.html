@@ -1,119 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keenan Heller</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>About the author</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="navbar">
-        <div class="nav-left">Keenan Heller</div>
-        <div class="nav-right-icon"><i class="fas fa-list"></i></div>
-        <ul class="nav-right">
-            <li class="right-content" id="nav-index">Home</li>
-            <li class="right-content" id="nav-portfolio">Portfolio</li>
-            <li class="right-content" id="nav-contact">Contact</li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="nav navbar-brand align-items-center" >
+        <span class="nav">Keenan Heller</span>
       </div>
-    </header>
-
-    <section>
-      <div class="picture-container"></div>
+      <ul class="nav nav-links align-items-center">
+        <li class="nav-item active">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-spacer">|</li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-spacer">|</li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="project-background">
+    <section class="section-brand">
+      <h2>About Me</h2>
     </section>
-
-    <section>
-      <div class="about-me">
-        <div class="me-header"><span>Get to Know Me</span></div>
-        <div class="me-content">
-          <div class="me-picture"><img src="images/cover-photo.jpg" class="cooking-image" alt="Keenan's cooking" /></div>
-          <div class="me-blurb">
-              <p><span class="first-letter">H</span>i there! I won't leave you hanging... I'll be back for you later!</p>
-          </div>
-        </div>
+    <hr>
+    <div class="about-content">
+      <div class="cover-photo"></div>
+      <div class="about-text">
+        <p><b>Full Stack Web Developer</b> and Engineering professional continually learning and developing new skills to utilize within an organization. Background in developing automated solutions for a world-class 24/7 manufacturing environment, including projects integrating machinery into an internet-of-things (IoT) system for viewing current states of the devices. </p>
+        <p>Originally a design and manufacturing engineer, responsibilities included designing and implementing inventive solutions for a wide variety of issues. Several of these issues were best resolved with developing software to automate manual systems that were error prone, unreliable, and consistency impacted on-time delivery and quality costs.</p>
+        <p>Further expansion of this skill set resulted in developing programs ensuring new production capabilities were completely digital allowing data collection for all aspects of the manufacturing process. This production capability integrated network capable low voltage hardware into the machinery which would transmit information to the database in addition to interfaces for operators at each process step to capture operational data for the system.</p>
+        <a href='./assets/KeenanHellerResume.pdf' target='_blank'>Resume</a>
       </div>
-    </section>
-
-    <section>
-      <div class="portfolio">
-        <div class="portfolio-header"><span>Portfolio</span></div>
-        <div class="portfolio-content">
-          <div class="projects" id="project0">
-            <div class="project0-card">
-              <div class="project-title">
-                <a href="assets/KeenanHellerResume.pdf" target="_blank" class="projects-blurb">Resume</a>
-              </div>
-            </div>
-          </div>
-          <div class="projects" id="project1">
-            <div class="project1-card">
-              <div class="project-title">
-                <a href="https://kheller18.github.io/Project_1/" class="projects-blurb">Chefify: Find your next meal</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-content">
-          <div class="projects" id="project2">
-            <div class="project2-card">
-              <div class="project-title">
-                <a href="https://kheller18.github.io/weather-dashboard/" class="projects-blurb">Weather Dashboard: Weather for US cities</a>
-              </div>
-            </div>
-          </div>
-          <div class="projects" id="project3">
-            <div class="project3-card">
-              <div class="project-title">
-                <a href="https://obscure-castle-98143.herokuapp.com/" class="projects-blurb">Burger Joint: Helping you devour burgers</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-content">
-          <div class="projects" id="project4">
-            <div class="project4-card">
-              <div class="project-title">
-                <a href="https://kheller18.github.io/weather-dashboard/" class="projects-blurb">VerdantEarth: Reduce your carbon footprint</a>
-              </div>
-            </div>
-          </div>
-          <div class="projects" id="project5">
-            <div class="project5-card">
-              <div class="project-title">
-                <a href="https://note-taker-kman.herokuapp.com/" class="projects-blurb">Note-Taker: Your thoughts in one place</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="contact"></div>
-    </section>
-
-    <footer>
-      <div class="footer">
-        <ul class="foot-icons">
-          <li class="foot-icon" onclick="window.open('https://github.com/kheller18')"><i class="fab fa-github"></i></li>
-          <li class="foot-icon" onclick="window.open('https://www.linkedin.com/in/keenanheller/')"><i class="fab fa-linkedin"></i></li>
-        </ul>
-      </div>
-    </footer>
+    </div>
   </div>
-  
-  <script src="https://use.fontawesome.com/6f5b3ddfd5.js"></script>
-  <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src='js/script.js'></script>
+  <footer class="footer bg-dark">
+    <!-- <span class="copy-span">&copy; Zarlengo.Net</span> -->
+    <nav id="navbar-links">
+      <a title="linkedin.com/in/zarlengo" target="_blank" href="https://www.linkedin.com/in/zarlengo/"><img alt="linkedin" src="./images/LI-In-Bug.png"></a>
+      <a title="github.com/Zarlengo" target="_blank" href="https://github.com/Zarlengo"><img alt="github" src="./images/GitHub-Mark-Light-32px.png"></a>
+    </nav>
+    <nav id="navbar-languages"></nav>
+  </footer>
 </body>
 </html>

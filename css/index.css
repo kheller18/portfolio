@@ -1,0 +1,29 @@
+/*  Sets a minimum height to keep picture within background block  */
+.about-content {
+  min-height: 425px;
+}
+
+/*  Formatting for the profile picture  */
+.cover-photo {
+  display: inline-block !important;
+  width: 300px;
+  height: 368px;
+  background-image: url(../images/cover-photo-me.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 20px 20px 0;
+  float: none;
+}
+
+/*  Formatting for the profile text  */
+.about-text {
+  margin: 10px;
+  display: inline;
+}
+
+/*  Floats the picture along side text for medium and larger screens  */
+@media (min-width: 768px) { 
+  .cover-photo {
+    float: left;
+  }
+}

@@ -1,327 +1,184 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
+/*  Common stylings across all of the pages  */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=IBM+Plex+Mono&display=swap');
 
-body {
-  font-family: Geneva;
-  background-color: #cab6a5;
-}
-
+/******  Document wide elements  ******/
 :root {
-  --main-background-color: white;
-  --main-font-color: #000;
-  --dark-background-color: #3B4954;
-  --dark-background-font-color: white;
-  --accent-color-primary: #E6E6FA;
-  --accent-color-secondary: #E0FFFF;
-  --accent-font-color: #000;
+  --main-blue-back-color: #117ebd;
+  --dark-back-font-color: #fff;
+
+  --secondary-back-color: #add8e6;
+  --light-back-font-color: #333;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+/*  Common background color  */
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: var(--secondary-back-color);
+  min-width:400px;        /* Suppose you want minimum width of 1000px */
+  width: auto !important;  /* Firefox will set width as auto */
+}
+
+
+/******  header settings  ******/
+/*  Formatting for the nav bar */
 .navbar {
-  display: flex;
-  flex-direction: row;
   position: fixed;
-  align-items: center;
-  width: 100%;
   top: 0;
-  height: 50px;
-  justify-content: space-between;
-  font-family: cursive;
-  background-color: var(--dark-background-color);
-  color: var(--dark-background-font-color);
-}
-
-.nav-left {
-  padding: 0 0 0 15px;
-  font-size: 24px;
-}
-
-.nav-right {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-right: 10px;
-  font-size: 18px;
-  list-style-type: none;
-}
-
-.nav-right-icon {
-  display: none;
-  position: absolute;
-  right: 5px;
-}
-
-#nav-index,
-#nav-about,
-#nav-portfolio,
-#nav-contact {
-  padding: 0 5px;
-}
-
-#nav-index:hover,
-#nav-about:hover,
-#nav-portfolio:hover,
-#nav-contact:hover,
-.nav-left:hover,
-.foot-icon:hover {
-  cursor: pointer;
-  color: lightgrey;
-}
-
-.picture-container {
+  left: 0;
   width: 100%;
-  height: 600px;
-  background-image: url("cover-photo-me.jpg");
-  background-position: center;
-  background-size: cover;   
-  z-index: 1001; 
+  height: 120px;
+  padding: 0px;
+  z-index: 100;
 }
 
-.about-me {
+/*  Formatting for the branding  */
+.navbar-brand {
+  background-color: var(--main-blue-back-color);
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+} 
+
+.navbar-brand span {
+  font-family: 'Amaranth', sans-serif;
+  margin: auto;
+  color: var(--dark-back-font-color);
+}
+
+/*  Formatting for the page links */
+.nav-links {
+  width: 100%;
+  justify-content: center;
+  height: 60px;
+}
+
+.nav-item {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  color: var(--dark-back-font-color);
+  text-decoration: none;
 }
 
-.me-header {
-  font-size: 20px;
-  border-bottom: 1px solid var(--dark-background-color);
-  text-align: left;
-  width: 70%;  
-  margin-top: 50px;  
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-back-font-color);
 }
 
-.me-content {
+.nav-spacer {
+  color: var(--dark-back-font-color);
+  opacity: 0.5;
+}
+
+.nav-item:not(.active):hover {
+  background-color: var(--main-blue-back-color);
+  color: var(--dark-back-font-color);
+}
+
+a.active {
+  font-weight: bolder;
+  background-color: var(--secondary-back-color);
+  color: var(--light-back-font-color);
+  border-radius:15%;
+  pointer-events: none;
+}
+
+a:not(.active) {
+  text-decoration: none;
+}
+
+
+/******  background tile settings  ******/
+.project-background {
+  background-color: var(--dark-back-font-color);
+  margin: 160px 30px 100px 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h2 {
+  color: var(--main-blue-back-color);
+  font-weight: bold;
+}
+
+.section-brand {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 20px;
-  border: 2px dashed var(--dark-background-color);
+  flex-direction: column;
+  padding: 20px 0 0 0;
+  top:0;
 }
 
-.cooking-image {
-  width: 379px;
-  height: 379px;
-  padding: 10px;
-  border-image: 5 round;
-  border-right: none;
+hr {
+  width: 100%;
+  opacity: 60%;
+  border: 2px solid var(--light-back-font-color);;
 }
 
-.me-blurb {
-  width: 379px;
-  height: 379px;
-  padding: 10px;
-  border-left: none;
+
+/******  footer settings  ******/
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 6px solid var(--main-blue-back-color);
+  color: var(--dark-back-font-color);
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  font-size: small;
+  display: flex;
+  justify-content: center;
 }
 
-.first-letter {
-  font-size: 35px;
-  line-height: 50px;
-}
-
-.portfolio {
+footer > span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 50px;
 }
 
-.portfolio-header {
-  font-size: 20px;
-  border-bottom: 1px solid var(--dark-background-color);
-  text-align: left;
-  width: 70%;
-}
-
-.portfolio-content {
+#navbar-links a {
+  float: left;
+  padding: 3px 6px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.projects {
-  margin: 20px;
-}
-
-.project0-card {
-  background-image: url(resume.png);
-  background-size: 385px 385px;
-  width: 385px;
-  height: 385px;
-  padding: 5px;
-  border: 1px solid var(--dark-background-color);
-  border-radius: 5px;
-}
-
-.project1-card {
-  background-image: url(chefify.png);
-  background-size: 385px 385px;
-  width: 385px;
-  height: 385px;
-  padding: 5px;
-  border: 1px solid var(--dark-background-color);
-  border-radius: 5px;
-}
-
-.project2-card {
-  background-image: url(weather-dashboard.png);
-  background-size: 385px 385px;
-  width: 385px;
-  height: 385px;
-  padding: 5px;
-  border: 1px solid var(--dark-background-color);
-  border-radius: 5px;
-}
-
-.project3-card {
-  background-image: url(burger-joint-screenshot.png);
-  background-size: 385px 385px;
-  width: 385px;
-  height: 385px;
-  padding: 5px;
-  border: 1px solid var(--dark-background-color);
-  border-radius: 5px;
-}
-
-.project4-card {
-  background-image: url(verdant-earth-screenshot.png);
-  background-size: 385px 385px;
-  width: 385px;
-  height: 385px;
-  padding: 5px;
-  border: 1px solid var(--dark-background-color);
-  border-radius: 5px;
-}
-
-.project5-card {
-  background-image: url(note-taker-screenshot.png);
-  background-size: 385px 385px;
-  width: 385px;
-  height: 385px;
-  padding: 5px;
-  border: 1px solid var(--dark-background-color);
-  border-radius: 5px;
-}
-
-.project-title {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  left: -6px;
-  bottom: -341px;
-  width: 397px;
-  height: 50px;
-  background-color: var(--dark-background-color);
-  opacity: 0.9;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.projects-blurb {
-  color: white;
-  margin-left: 10px;
-}
-
-.project-image {
-  width: 385px;
-  height: 385px;
-  padding: 5px;
-  border: 1px solid var(--dark-background-color);
-}
-
-.contact {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  position: re;
 }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  justify-content: center;
-  background-color: var(--dark-background-color);
-  color: var(--dark-background-font-color);
-  margin: 50px 0 0 0;
+#navbar-links img {
+  height: 25px;
 }
 
-.foot-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  list-style-type: none;
-}
-
-.foot-icon {
-  margin: 0 5px;
-}
-
-@media (max-width: 550px) {
-  .container {
-    width: 100%;
-    height: 100%;
-  }    
-
-  .nav-right-icon {
-      display: block;
-      position: absolute;
-      right: 10px;
-      font-size: 18px;
-  }
-    
-  .nav-right {
-      display: none;
-      position: absolute;
-      top: 35px;
-      right: 8px;
-      z-index: 1001;
-      background-color: white;
-      color: var(--dark-background-color); 
-      padding: 0px;
+/*  Formatting changes for large screens  */
+@media (min-width: 768px) { 
+  .navbar {
+    height: 60px;
   }
 
-  .right-content {
-      border: solid 1px var(--dark-background-color);
+  .navbar-brand {
+    width: 150px;
+    margin: 0 30px;
+    justify-content: flex-start;
   }
 
-  .me-header {
-      font-size: 20px;
-      border-bottom: 1px solid var(--dark-background-color);
-      text-align: left;
-      width: 100%;  
-      margin-top: 50px;  
+  .nav-links {
+    width: 50%;
+    justify-content: flex-end;
   }
 
-  .portfolio {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 50px;
-  }    
-
-  .portfolio-header {
-      font-size: 20px;
-      border-bottom: 1px solid var(--dark-background-color);
-      text-align: left;
-      width: 100%;
-  }    
+  .project-background {
+    margin: 80px 30px 80px 30px;
+  }
 }

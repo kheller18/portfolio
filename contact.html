@@ -2,69 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keenan Heller</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact Keenan</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./Assets/contact.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <header>
-        <div class="navbar">
-            <div class="nav-left">Keenan Heller</div>
-            <div class="nav-right-icon"><i class="fas fa-list"></i></div>
-            <ul class="nav-right">
-                <li class="right-content" id="nav-index">Home</li>
-                <li class="right-content" id="nav-about">About</li>
-                <li class="right-content" id="nav-portfolio">Portfolio</li>
-                <li class="right-content" id="nav-contact">Contact</li>
-            </ul>
-        </div>
-    </header>
-
-    <section>
-        <div class="contact">
-            <div class="contact-content">
-                <div class="contact-methods">
-                    <div class="contact-github"></div>
-                    <div class="contact-linkedin"></div>
-                </div>
-                <div class="contact-form">
-                    <div class="form-content">
-                        <div class="form-header"><b>Contact Me</b></div>
-                        <label for="name" class="form-labels">YOUR NAME *</label><br>
-                        <input type="text" class="form-body" id="first-name" placeholder="First Name">
-                        <input type="text" class="form-body" id="last-name" placeholder="Last Name"><br>
-                        <label for="name" class="form-labels">EMAIL ADDRESS *</label><br>
-                        <input type="text" class="form-body" id="email-address" placeholder="Eg. example@email.com"><br>
-                        <label for="name" class="form-labels">PHONE NUMBER *</label><br>
-                        <input type="text" class="form-body" id="phone-number" placeholder="Eg. 000-000-0000"><br>
-                        <label for="name" class="form-labels">MESSAGE *</label><br>
-                        <textarea name="message" id="message" placeholder="Enter your message here"></textarea><br>
-                        <button type="submit" id="contact-button"><b>SUBMIT</b></button>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="nav navbar-brand align-items-center" >
+        <span class="nav">Keenan Heller</span>
+      </div>
+      <ul class="nav nav-links align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-spacer">|</li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-spacer">|</li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="project-background">
+    <section class="section-brand">
+      <h2>Contact</h2>
     </section>
-
-    <footer>
-        <div class="footer">
-            <ul class="foot-icons">
-                <li class="foot-icon" onclick="window.open('https://github.com/kheller18')"><i class="fab fa-github"></i></li>
-                <li class="foot-icon" onclick="window.open('https://www.linkedin.com/in/keenanheller/')"><i class="fab fa-linkedin"></i></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="https://use.fontawesome.com/6f5b3ddfd5.js"></script>
-    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='./Assets/script.js'></script>
+    <hr>
+    <div class="contact-content">
+      <form id="contact-form" action="index.html">
+        <button type="submit" disabled style="display: none" aria-hidden="true"></button>
+        <label class="form-titles" for="name"><i class="fa fa-user" aria-hidden="true"></i> Name</label><br>
+        <input class="form-content" type="text" id="name" name="name" value="Your name"><br>
+        <label class="form-titles" for="email"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label><br>
+        <input class="form-content" type="email" id="email" name="email" value="email@domain.com"><br>
+        <label class="form-titles" for="message"><i class="fa fa-rocket"></i> Message</label><br>
+        <span class="resize">
+          <input class="form-content message" type="text" id="message" name="message">
+        </span><br>
+      <button form="contact-form" class="submit-button" type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer bg-dark">
+    <span class="copy-span">&copy;</span>
+    <nav id="navbar-links">
+      <a title="linkedin.com/in/Heller" target="_blank" href="https://www.linkedin.com/in/keenanheller/"><img alt="linkedin" src="./images/LI-In-Bug.png"></a>
+      <a title="github.com/Heller" target="_blank" href="https://github.com/kheller18"><img alt="github" src="./images/GitHub-Mark-Light-32px.png"></a>
+    </nav>
+    <nav id="navbar-languages">
+    </nav>
+  </footer>
 </body>
 </html>

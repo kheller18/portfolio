@@ -1,219 +1,38 @@
-* {
-    padding: 0px;
-    margin: 0px;
+/*  Formatting for the descriptors on each form element  */
+.form-titles {
+  margin-top: 20px;
 }
 
-body {
-    font-family: Geneva;
-    background-color: #cab6a5;
-}
-
-:root {
-    --main-background-color: white;
-    --main-font-color: #000;
-    --dark-background-color: #3B4954;
-    --dark-background-font-color: white;
-    --accent-color-primary: #E6E6FA;
-    --accent-color-secondary: #E0FFFF;
-    --accent-font-color: #000;
-}
-
-.container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    align-items: center;
-    width: 100%;
-    top: 0;
-    height: 50px;
-    justify-content: space-between;
-    font-family: cursive;
-    background-color: var(--dark-background-color);
-    color: var(--dark-background-font-color);
-}
-
-
-
-.nav-left {
-    padding: 0 0 0 15px;
-    font-size: 24px;
-}
-
-.nav-right {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-right: 10px;
-    font-size: 20px;
-    list-style-type: none;
-}
-
-.nav-right-icon {
-    display: none;
-    position: absolute;
-    right: 5px;
-}
-
-#nav-index,
-#nav-about,
-#nav-portfolio,
-#nav-contact {
-    padding: 0 5px;
-}
-
-#nav-index:hover,
-#nav-about:hover,
-#nav-portfolio:hover,
-#nav-contact:hover,
-.nav-left:hover,
-.foot-icon:hover {
-    cursor: pointer;
-    color: lightgrey;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    position: absolute;
-    width: 100%;
-    top: 100px;
-}
-
-
-.contact-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-header {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.contact-form {
-    width: 400px;
-    background-color: lightgrey;
-    display: flex;
-    justify-content: center;
-    border: 1px solid var(--dark-background-color);
-    border-radius: 5px;
-}
-
+/*  Formatting for the input elements  */
 .form-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.form-body {
-    height: 20px;
-    padding: 5px;
-    margin-bottom: 5px;
+/*  Options to allow resizing of the message text box by
+  dragging the selector in the bottom right  */
+.resize {
+  overflow-y: hidden;
+  resize: vertical;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  min-height: 100px;
 }
 
-.form-labels {
-    font-size: 10px;
+.resize > input {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
 }
 
-#email-address {
-    width: 100%;
-}
-
-#phone-number {
-    width: 100%;
-}
-
-#message {
-    width: 100%;
-    height: 100px;
-    padding: 5px;
-    text-align: left;
-    justify-content: start;
-    
-}
-
-#contact-button {
-    width: 100px;
-    height: 40px;
-    background-color: green;
-    color: white;
-    margin-top: 20px;
-    font-size: 14px;
-    position: relative;
-    left: 35%;
-    border-radius: 5px;
-}
-
-#contact-button:hover {
-    cursor: pointer;
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    justify-content: center;
-    background-color: var(--dark-background-color);
-    color: var(--dark-background-font-color);
-    margin: 10px 0 0 0;
-}
-
-.foot-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    list-style-type: none;
-}
-
-.foot-icon {
-    margin: 0 5px;
-}
-
-@media (max-width: 550px) {
-    .container {
-        width: 100%;
-        height: 100%;
-    }    
-
-    .nav-right-icon {
-        display: block;
-        position: absolute;
-        right: 10px;
-        font-size: 18px;
-    }
-    
-    .nav-right {
-        display: none;
-        position: absolute;
-        top: 35px;
-        right: 8px;
-        z-index: 1001;
-        background-color: white;
-        color: var(--dark-background-color); 
-        padding: 0px;
-    }
-
-    .right-content {
-        border: solid 1px var(--dark-background-color);
-    }
+/*  Formatting for the submit button */
+.submit-button {
+  border-radius: 5px;
+  border: 0 solid;
+  margin: 30px 0 30px 0;
+  padding: 5px 35px 5px 35px;
+  background-color: var(--main-blue-back-color);
+  color: var(--dark-back-font-color);
 }
