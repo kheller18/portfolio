@@ -21,10 +21,9 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
   background-color: var(--secondary-back-color);
-  min-width:400px;        /* Suppose you want minimum width of 1000px */
+  min-width: 400px;        /* Suppose you want minimum width of 1000px */
   width: auto !important;  /* Firefox will set width as auto */
 }
-
 
 /******  header settings  ******/
 /*  Formatting for the nav bar */
@@ -46,7 +45,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-} 
+}
 
 .navbar-brand span {
   font-family: 'Amaranth', sans-serif;
@@ -61,18 +60,19 @@ body {
   height: 60px;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-back-font-color);
+}
+
 .nav-item {
   height: 100%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: var(--dark-back-font-color);
   text-decoration: none;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: var(--dark-back-font-color);
 }
 
 .nav-spacer {
@@ -96,7 +96,6 @@ a.active {
 a:not(.active) {
   text-decoration: none;
 }
-
 
 /******  background tile settings  ******/
 .project-background {
@@ -123,7 +122,6 @@ hr {
   opacity: 60%;
   border: 2px solid var(--light-back-font-color);;
 }
-
 
 /******  footer settings  ******/
 footer {

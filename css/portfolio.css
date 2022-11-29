@@ -32,7 +32,7 @@
   background-image: url(../images/googleBooks.png);
 }
 
-.employeeDirectory {
+.employee-directory {
   background-image: url(../images/employee-directory.png);
 }
 
@@ -56,15 +56,15 @@
   background-image: url(../images/weather.png);
 }
 
-.workDay {
+.workday {
   background-image: url(../images/daily-calendar.png);
 }
 
-.codeQuiz {
+.code-quiz {
   background-image: url(../images/code-quiz.png);
 }
 
-.passwordGenerator {
+.password-generator {
   background-image: url(../images/random-password-generator.png);
 }
 
