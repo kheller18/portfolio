@@ -9,7 +9,7 @@
 
   A personal website for people to check out my updates and projects I'm working on.  Includes methods to contact me and get in touch via social media and GitHub.
 
-  ![application screenshot](portfolio.png)
+  ![application screenshot](images/portfolio.png)
 
 
 ## Table of Contents
