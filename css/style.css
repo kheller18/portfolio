@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&family=IBM+Plex+Mono&display=swap');
 
-/******  Document wide elements  ******/
 :root {
-  --main-blue-back-color: #117ebd;
+  --main-blue-back-color: #6495ED ;
   --dark-back-font-color: #fff;
 
-  --secondary-back-color: #add8e6;
+  --secondary-back-color: #EAFAF1;
   --light-back-font-color: #333;
 }
 
